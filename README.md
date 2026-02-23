@@ -1,9 +1,9 @@
-# FB-RTK ROS 驱动包
+# Muse Pi Pro（RISC-V）上完整部署 ROS2 RTK
 
 ## 介绍
-FB-RTK ROS 驱动包提供全面的传感器数据采集和机器人控制功能。这是一个集成驱动程序，同时处理 IMU 传感器、GPS RTK 定位数据和机器人运动控制。
+Muse Pi Pro（RISC-V）上完整部署 ROS2 RTK，RTK ROS 驱动包提供全面的传感器数据采集和机器人控制功能。这是一个集成驱动程序，同时处理 IMU 传感器、GPS RTK 定位数据和机器人运动控制。。这是一个集成驱动程序，同时处理 IMU 传感器、GPS RTK 定位数据和机器人运动控制。
 
-![导航小车](导航小车.jpg)
+[https://github.com/Abner2017/Muse-Pi-Pro-ROS-RTK/blob/main/%E6%9E%B6%E6%9E%84.png]
 
 ## 功能特性
 - **IMU 数据**: 200Hz高频率惯性测量单元数据发布
@@ -15,7 +15,7 @@ FB-RTK ROS 驱动包提供全面的传感器数据采集和机器人控制功能
 ## 软件架构
 ```
 ┌─────────────────────────────────────────────┐
-│             fbrtk_driver_node               │
+│         Muse Pi Pro-RTK_driver_node               │
 │                                             │
 │  ┌─────────────┐  ┌─────────────────────┐   │
 │  │  IMU 解析器 │  │    GPS 解析器         │   │
@@ -212,25 +212,4 @@ roslaunch fbrtkros fbrtk_driver.launch --screen
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 开启 Pull Request
 
-## 许可证
-本项目采用 MIT 许可证 - 详见 LICENSE 文件
 
-## 技术支持
-技术支持和问题咨询：
-- 联系方式：维特智能旗舰店
-- 官方店铺：https://weitezhineng.tmall.com/
-
-## 更新日志
-### v1.1.0 (当前版本)
-- 集成传感器数据采集和机器人控制到单一驱动
-- 实现阻塞式串口读取，提高数据接收效率
-- 更新控制协议为AT指令格式
-- 简化键盘控制脚本，5Hz频率发送命令
-- 移除未使用的功能（紧急停止、简单控制等）
-
-### v1.0.0
-- 初始版本发布
-- IMU 数据驱动
-- GPS RTK 驱动
-- 机器人控制接口
-- 安全功能实现
