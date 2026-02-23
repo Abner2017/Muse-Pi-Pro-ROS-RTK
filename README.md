@@ -5,9 +5,9 @@ Muse Pi Pro（RISC-V）上完整部署 ROS2 RTK，RTK ROS 驱动包提供全面�
 
 [https://github.com/Abner2017/Muse-Pi-Pro-ROS-RTK/blob/main/%E6%9E%B6%E6%9E%84.png]
 
-##参考文档
-[https://www.yuque.com/abner-nhbcw/kb/ss8it0wy29zdvvil?singleDoc#]
-[https://www.yuque.com/abner-nhbcw/kb/vb33gqwgrg3r8mcx]
+## 参考文档
+- [https://www.yuque.com/abner-nhbcw/kb/ss8it0wy29zdvvil?singleDoc#]
+- [https://www.yuque.com/abner-nhbcw/kb/vb33gqwgrg3r8mcx]
 
 ## 功能特性
 - **IMU 数据**: 200Hz高频率惯性测量单元数据发布
